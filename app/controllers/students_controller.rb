@@ -7,9 +7,9 @@ class StudentsController < ApplicationController
 
   def create()
     # Hint: params??
-    #@full_name = Teacher.find(params[:full_name])
-    #@course = Teacher.find(params[:course_name])
-    #grade_level = Teacher.find(params[:grade_level])
+    @student_name = params[:student_name]
+    @course_name = params[:c_name]
+    @age = params[:age]
     #@full_name = Teacher.where full_name: params[:full_name]
     #@course = Teacher.where course_name: params[:course_name]
     #@grade_level = Teacher.where grade_level: params[:grade_level]
